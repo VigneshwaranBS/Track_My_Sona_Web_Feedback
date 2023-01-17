@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+    integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+
+  <link rel="icon" href="./assets/TMSlogo.jpg" type="image/icon type">
+  <link rel="stylesheet" href="./style.css">
+
+
+  <title>Track My Sona </title>
+</head>
+
+<body>
+  <!-- <div class="con">
+    <p id="dep_of_pro"> </p>
+    <p id="ins_by">  </p>
+    <P id="ins_date"></P>
+    <p id="location"></p>
+    <p id="make"> </p>
+    <p id="mob">  </p>
+    <p id="model"></p>
+    <p id="power_rating"> </p>
+    <p id="procurement">  </p>
+    <p id="sn_no"></p>
+    <p id="wexpiry">  </p>
+    <p id="wperiod"></p>
+
+
+    <p id="num"></p>
+    <p id="name"></p>
+
+  </div> -->
+
+  <!-- 
+
+  name<input type="text" id="name1"> </input> <br>
+  phn<input type="text" id="phn1"> </input> <br>
+  num<input type="text" id="num1"> </input> <br> -->
+
+
+  <div class="container">
+
+    <span class="big-circle"></span>
+    <img src="../public/assets/shapeweb.png" class="square" alt="" />
+    <div class="form">
+
+
+      <div class="contact-info">
+        <!-- <h3 class="title"> Register Your Complaints</h3>
+          <p class="text">
+            Complaints Register means the system to be implemented and maintained by the 
+            Service Provider the purpose of which is to record and track complaints and enquiries from the public  </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="../public/assets/locationweb.png" class="icon" alt="" />
+              <p>Junction Main Road Salem, Tamilnadu, 636005. </p>
+            </div>
+            <div class="information">
+              <img src="../public/assets//emailweb.png" class="icon" alt="" />
+              <p>sonahrd@sonatech.ac.in</p>
+            </div>
+            <div class="information">
+              <img src="../public/assets/phoneweb.png" class="icon" alt="" />
+              <p>0427-409-9999</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="mailto: bs.vigneshwaran@gmail.com?subject=Testing out mailto!&body=This is only a test!">
+                <i class="fa-solid fa-lightbulb"></i>
+              </a>
+              <a href="mailto: srisanjanaarunkumar@gmail.com?subject=Testing out mailto!&body=This is only a test!">
+                <i class="fa-solid fa-computer"></i>              </a>
+              <a href="mailto: bs.vigneshwaran@gmail.com?subject=Testing out mailto!&body=This is only a test!">
+                <i class="fa-solid fa-toilet"></i>              </a>
+              <a href="mailto: srisanjanaarunkumar@gmail.com?subject=Testing out mailto!&body=This is only a test!">
+                <i class="fa-solid fa-paint-roller"></i>              </a>
+              <a href="mailto: bs.vigneshwaran@gmail.com?subject=Testing out mailto!&body=This is only a test!"">
+                <i class="fa-solid fa-screwdriver-wrench"></i>              </a>
+            </div>
+          </div> -->
+
+
+
+        <div class="id-data">
+          <h3>Product Details :</h3>
+          <input type="text" id="dep_of_pro" disabled> </input> <br>
+          <input type="text" id="ins_by" disabled> </input> <br>
+          <input type="text" id="ins_date" disabled> </input> <br>
+          <input type="text" id="location" disabled> </input> <br>
+          <input type="text" id="make" disabled> </input> <br>
+          <input type="text" id="mob" disabled> </input> <br>
+          <input type="text" id="model" disabled> </input> <br>
+          <input type="text" id="power_rating" disabled> </input> <br>
+          <input type="text" id="procurement" disabled> </input> <br>
+          <input type="text" id="sn_no" disabled> </input> <br>
+          <input type="text" id="wexpiry" disabled> </input> <br>
+          <input type="text" id="wperiod" disabled> </input> <br>
+          <input type="text" id="config" disabled> </input> <br>
+
+          <!-- escalation-->
+          <input type="text" id="escalated1" disabled> </input> <br>
+          <input type="text" id="escalated2" disabled> </input> <br>
+          <input type="text" id="commentSupervisor" disabled> </input> <br>
+          <input type="text" id="CommentAdmin" disabled> </input> <br>
+          <!-- date and time   -->
+          <input type="text" id="date" disabled> </input>
+          <input type="text" id="time" disabled> </input>
+
+
+
+        </div>
+
+
+        <div class="info">
+          <div class="information">
+            <img src="./assets/TMSlogo.jpg" class="icon" alt="" />
+            <p>Powered By Sona Star Innovations Pvt Limited.</p>
+          </div>
+          <!--          
+          <div class="information">
+            <img src="../public/assets/phoneweb.png" class="icon" alt="" />
+            <p>0427-409-9999</p>
+          </div> -->
+        </div>
+
+      </div>
+
+
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form id="com_form">
+          <h3 class="title">File Your Complaints</h3>
+
+          <div class="input-container">
+            <input id="demo1" type="text" name="name" class="input" disabled >
+            <span>ID</span>
+
+            <!-- <label for="">UID</label> -->
+            <!-- <button type="button" id="getdata" class="button"> Get Details</button> -->
+
+            <!-- <button  type="button" class="btn" id="getdata" > Get </button> -->
+
+          </div>
+          <div class="input-container">
+            <input type="text" name="name" class="input" id="com_by_name" />
+            <label for="">Name *</label>
+            <span>Name *</span>
+          </div>
+          <div class="otp">
+
+            <div class="input-container">
+              <input type="number" name="phone" class="input" id="com_by_mob" pattern="[7-9]{1}[0-9]{9}" />
+              <label for="">Phone Number *</label>
+              <span>Phone Number *</span>
+              <button type="button" class="btn" id="getotp" disabled="disabled"> Get OTP</button>
+
+            </div>
+            <p id="smstext" class="smstext"></p>
+            <div class="otp-div" id="otp-div">
+              <div class="input-container">
+                <input type="number" name="phone" class="input" id="otpnum" />
+                <label for="">Enter OTP *</label>
+                <span>Enter OTP</span>
+                <button type="button" class="btn" id="verify" disabled="disabled"> Verify</button>
+              </div>
+
+
+              <!-- <p id="otptextr"  style="font-size:20px;" color="green lighten-4"></p> -->
+              <p id="otptext" class="otptext"></p>
+            </div>
+
+            <div class="input-container">
+              <select name="complaints" id="com_txt" class="select-input">
+                <option value="choosecomplaint" selected disabled class="chosecom">Complaints</option>
+                <!-- Electricity -->
+                <option value="Not Working" id="e1"></option>
+                <option value="Broken" id="e2"></option>
+                <option value="Low Voltage" id="e3"></option>
+                <option value="Bustered" id="e4"> </option>
+
+                <!-- Plumbing -->
+                <option value="Leakage" id="p1"></option>
+                <option value="Broken" id="p2"></option>
+                <option value="Water Not Coming" id="p3"></option>
+
+                <!-- Carpenter -->
+                <option value="Fully Broken" id="c1"></option>
+                <option value="Partially Broken" id="c2"></option>
+
+                <!-- Network -->
+                <option value="Not Working" id="n1"></option>
+                <option value="Slow Network" id="n2"></option>
+                <option value="Hanging Problem" id="n3"></option>
+
+                <!-- Assets -->
+                <option value="Broken" id="a1"></option>
+                <option value="Not Working" id="a2"></option>
+                <option value="Network Issue" id="a3"></option>
+
+                <!-- Painting -->
+                <option value="Bleach" id="pa1"></option>
+                <option value="Little Ugly" id="pa2"></option>
+                <option value="Very Ugly" id="pa3"></option>
+
+
+                <option value="others">Others</option>
+              </select>
+
+            </div>
+            <!-- <h6>If others type below</h6> -->
+
+            <div class="hidden" id="pDetails">
+              <div class="input-container">
+                <input type="text" name="text" class="input" id="com_txt_others" />
+                <label for="">Enter Complaint</label>
+                <span>Enter Complaint</span>
+              </div>
+            </div>
+
+            <p class="title">* All mandatory fields</p>
+          </div>
+         
+         <a href="./thanks.html">
+          <button type="button" class="btn" id="insert" disabled="disabled" > Submit</button>
+        </a>
+      </div>
+      </form>
+
+    </div>
+  </div>
+  </div>
+  <script src="./main.js" type="text/javascript"></script>
+
+  <script type="module">
+
+    // date
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1; 
+    let dd = today.getDate();
+    
+    if (dd < 10) dd = '0' + dd;
+    if (mm < 10) mm = '0' + mm;
+    
+
+const date2 =dd + '-' + mm + '-' + yyyy;
+console.log(date2);
+document.getElementById('date').value=date2;  
+
+
+//Time
+var todaytime = new moment();
+console.log(todaytime.format("HH:mm"));
+var time1 =todaytime.format("HH:mm");
+document.getElementById('time').value=time1;  
+
+
+
+
+//FIXME - 
+var newUrl = window.location.pathname.split('/');
+console.log(newUrl[1]);
+document.getElementById("demo1").value= (newUrl[1]);
+console.log("ID fetched");
+
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyApnHQIjBWzHbr2eWIZ4zm9mM7Oejq5vA4",
+      authDomain: "map-my-sona.firebaseapp.com",
+      databaseURL: "https://map-my-sona-default-rtdb.firebaseio.com",
+      projectId: "map-my-sona",
+      storageBucket: "map-my-sona.appspot.com",
+      messagingSenderId: "854269454784",
+      appId: "1:854269454784:web:9bc09a36b591fe6c29c025",
+      measurementId: "G-DREPXB3P6W"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    import{getDatabase , ref ,set ,get, child, update, remove}
+    from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js"
+  
+      const  db = getDatabase();
+
+    //button
+  var insert1 =document.getElementById("insert");
+  var getdata1 =document.getElementById("getdata");
+  var verify = document.getElementById("verify");
+  
+      //referance
+    var dep_of_pro=   document.getElementById("dep_of_pro");
+    var ins_by=   document.getElementById("ins_by");
+    var ins_date =   document.getElementById("ins_date");
+    var location=    document.getElementById("location");
+    var mob =    document.getElementById("mob");
+    var model=    document.getElementById("model");
+    var power_rating=    document.getElementById("power_rating");
+    var procurement= document.getElementById("procurement");
+    var sn_no=  document.getElementById("sn_no");
+    var wexpiry=    document.getElementById("wexpiry");
+    var wperiod=   document.getElementById("wperiod");
+    var config=   document.getElementById("config");
+
+    //escalation
+    var escalated1=  document.getElementById("escalated1");
+    var escalated2=    document.getElementById("escalated2");
+    var commentSupervisor=   document.getElementById("CommentSupervisor");
+    var commentAdmin=   document.getElementById("CommentAdmin");
+
+
+
+   //ID
+   var uid=document.getElementById("demo1");
+
+
+   //report
+   var  com_by_name=  document.getElementById("com_by_name");
+   var com_by_mob=    document.getElementById("com_by_mob");
+    var com_by_dep=   document.getElementById("com_by_dep");
+    var com_txt  = document.getElementById("com_txt");  
+    var com_txt_others  = document.getElementById("com_txt_others");  
+
+
+    //date and time
+    var date  = document.getElementById("date");  
+    var time  = document.getElementById("time");  
+
+    //Otp
+    var otpnum=   document.getElementById("otpnum");   
+
+   
+
+ 
+
+//ADD DATA
+     function insertdata(){
+
+    console.log("complaint registered");
+    var pathrandom = Math.floor(100000 + Math.random() * 900000000);
+    console.log(pathrandom)
+
+    set(ref(db,"complaints/"+dep_of_pro.value+ "/"+ otpnum.value+com_by_mob.value+sn_no.value +"/"),{
+
+        //data
+        dep_of_pro:dep_of_pro.value,
+        ins_by:ins_by.value,
+        ins_date:ins_date.value,
+        location:location.value,
+        make:make.value,
+        mob:mob.value,
+        model:model.value,
+        power_rating:power_rating.value,
+        procurement:procurement.value,
+        sn_no:sn_no.value,
+        wexpiry:wexpiry.value,
+        wperiod:wperiod.value,
+        status:"Pending",
+        rating:"0.00",
+        config:config.value,
+        key:otpnum.value+com_by_mob.value+sn_no.value ,
+        escalated1:"NO",
+        escalated2:"NO",
+        commentSupervisor:"NIL",
+        commentAdmin:"NIL",
+
+
+        //UID
+        uniqueId:uid.value,
+        date:date.value,
+        time:time.value,
+
+
+        //report
+        com_by_mob:com_by_mob.value,
+        com_by_name:com_by_name.value,
+        otpnum:otpnum.value,
+        com_txt:com_txt.value,
+        com_txt_others:com_txt_others.value,
+
+        
+        
+  
+    }) 
+    .then(()=>{
+      //alert("Complaint you made is Submitted. Thanks for contacting with US..");
+      //window.close();
+      
+    })
+    .catch((err)=>{
+      alert("error"+err);
+    });
+   console.log("complaint registered");
+
+  
+   
+   }
+//button actions
+
+insert1.addEventListener('click' , insertdata);
+
+//getdata1.addEventListener("click",selectdata);
+  
+
+
+
