@@ -125,7 +125,7 @@ input.h3{
 
 textarea.input {
   padding: 0.8rem 1.2rem;
-  min-height: 150px;
+  min-height: 120px;
   border-radius: 22px;
   resize: none;
   overflow-y: auto;
@@ -306,7 +306,7 @@ textarea.input {
   justify-content: center;
   overflow: hidden;
   flex-direction: row-reverse;
-  height: 130px;
+  height: 150px;
   position: relative;
 }
 
