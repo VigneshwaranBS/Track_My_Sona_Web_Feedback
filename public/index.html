@@ -25,13 +25,14 @@
     <img src="../public/assets/shapeweb.png" class="square" alt="" />
     <div class="form">
       <div class="contact-info">
-        <div class="id-data">
+        <input class="id-data">
           <!-- date and time   -->
           <input type="text" id="rate_value">
           <input  id="key">
 
           <input type="text" id="date" disabled> </input>
           <input type="text" id="time" disabled> </input>
+          <!-- <input id="demo1" type="text"  disabled > </input> -->
 
         </div>
         <div class="info">
@@ -152,7 +153,7 @@
           </div>
 
           
-
+          <input id="demo1" type="text"   >
             <h3 class="title">Comments </h3>
             <div class="input-container">
               <textarea class="input" id="feed_comments" rows="5" cols="5000">
@@ -196,6 +197,13 @@ console.log(todaytime.format("HH:mm"));
 var time1 =todaytime.format("HH:mm");
 document.getElementById('time').value=time1;  
 
+//FIXME - 
+var newUrl = window.location.pathname.split('/');
+console.log(newUrl[1]);
+document.getElementById("demo1").value= newUrl[1];
+console.log("ID fetched");
+
+
 
 $(".rating").change(function(){
   var val = $(".rating:checked").val();
@@ -238,6 +246,11 @@ $(".rating").change(function(){
     //LINK - 
     var feed_comments = document.getElementById("feed_comments");
     var rate_value = document.getElementById("rate_value");
+    var dep_of_pro=   document.getElementById("dep_of_pro");
+
+      //ID
+    var uid=document.getElementById("demo1");
+
 
     //var r1 = document.getElementById("rating-1").value;
     //var r2 = document.getElementById("rating-2").value;
@@ -256,10 +269,12 @@ $(".rating").change(function(){
      function insertdata(){
 
 
-    set(ref(db,"UserFeedback/"+key.value),{
+    set(ref(db,"UserFeedback/"+uid.value+"/" +key.value+"/"),{
 
         //data
         key:key.value,
+        uid:uid.value,
+        //dep_of_pro:dep_of_pro.value,
 
         feed_comments:feed_comments.value,
         rate_value:rate_value.value,
