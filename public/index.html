@@ -21,33 +21,51 @@
 </head>
 <body>
   <div class="container">
+
     <span class="big-circle"></span>
     <img src="../public/assets/shapeweb.png" class="square" alt="" />
     <div class="form">
+
+
       <div class="contact-info">
-        <input class="id-data">
-          <!-- date and time   -->
+      
+        <div class="id-data">
+          <h3>Product Details :</h3>
           <input type="text" id="rate_value">
           <input  id="key">
 
           <input type="text" id="date" disabled> </input>
           <input type="text" id="time" disabled> </input>
           <input id="demo1" type="text"   >
-          <!-- <input id="demo1" type="text"  disabled > </input> -->
+
+       
+
 
         </div>
+
+
         <div class="info">
           <div class="information">
             <img src="./assets/TMSlogo.jpg" class="icon" alt="" />
             <p>Powered By Sona Star Innovations Pvt Limited.</p>
           </div>
+          <!--          
+          <div class="information">
+            <img src="../public/assets/phoneweb.png" class="icon" alt="" />
+            <p>0427-409-9999</p>
+          </div> -->
         </div>
+
       </div>
+
+
+
       <div class="contact-form">
         <span class="circle one"></span>
         <span class="circle two"></span>
+
         <form id="com_form">
-          <h3 class="title">Leave us a Feedback</h3>
+          <h3 class="title">File Your Complaints</h3>
 
           <div class="container1">
             <div class="feedback">
@@ -152,29 +170,20 @@
               </div>
             </div>
           </div>
-
-          
-          
-            <h3 class="title">Comments </h3>
-            <div class="input-container">
-              <textarea class="input" id="feed_comments" rows="5" cols="5000">
-                   </textarea>
-            </div>
-            <button type="button" class="btn" id="insert"> Submit</button>
-            <!-- <a href="./thanks.html">
-              <button type="button" class="btn" id="insert"> Submit</button>
-            </a> -->
+         
+          <h3 class="title">Comments </h3>
+          <div class="input-container">
+            <textarea class="input" id="feed_comments" rows="5" cols="5000">
+                 </textarea>
           </div>
-
+          <button type="button" class="btn" id="insert"> Submit</button>
       </div>
+      </form>
+     
 
     </div>
-    </form>
-
   </div>
-  </div>
-  </div>
-  <script src="./main.js" type="text/javascript"></script>
+  <script src="./main.js" ></script>
 
   <script type="module">
 
@@ -253,12 +262,6 @@ $(".rating").change(function(){
     var uid=document.getElementById("demo1");
 
 
-    //var r1 = document.getElementById("rating-1").value;
-    //var r2 = document.getElementById("rating-2").value;
-    //var r3 = document.getElementById("rating-3").value;
-    //var r4 = document.getElementById("rating-4").value;
-    //var r5 = document.getElementById("rating-5").value;
-
    
     var pathrandom = Math.floor(100000 + Math.random() * 900000000);
     document.getElementById('key').value=pathrandom;
@@ -285,12 +288,13 @@ $(".rating").change(function(){
   
     }) 
     .then(()=>{
-      window.close();
+      //window.close();
       
     })
     .catch((err)=>{
       alert("error"+err);
     });
+    alert("Thank you for your feedback !")
    console.log("feedback submitted...");
   
    }
